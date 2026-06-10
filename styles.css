@@ -29,9 +29,17 @@ body {
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: var(--color-dark);
+
     background:
-        linear-gradient(rgba(246, 255, 247, 0.25), rgba(246, 255, 247, 0.25)),
-        url("assets/solaris-background.png") center / cover no-repeat;
+        radial-gradient(circle at 4% 4%, rgba(255, 214, 96, 0.85) 0 6%, transparent 17%),
+        radial-gradient(circle at 35% 34%, rgba(255, 207, 87, 0.58) 0 5%, transparent 14%),
+        radial-gradient(circle at 73% 18%, rgba(255, 219, 119, 0.58) 0 7%, transparent 18%),
+        radial-gradient(circle at 88% 82%, rgba(126, 230, 102, 0.45) 0 8%, transparent 21%),
+        radial-gradient(circle at 18% 80%, rgba(16, 82, 62, 0.85) 0 18%, transparent 34%),
+        linear-gradient(135deg, #185745 0%, #3eb8ac 38%, #8bd766 100%);
+
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* Main page */
@@ -52,8 +60,26 @@ body {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at top left, rgba(255, 246, 180, 0.45), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(79, 212, 209, 0.35), transparent 35%);
+        linear-gradient(120deg, transparent 0 36%, rgba(255, 236, 154, 0.24) 37%, transparent 39%),
+        linear-gradient(120deg, transparent 0 42%, rgba(255, 236, 154, 0.18) 43%, transparent 45%),
+        linear-gradient(120deg, transparent 0 48%, rgba(255, 236, 154, 0.14) 49%, transparent 51%),
+        radial-gradient(circle at top left, rgba(255, 246, 180, 0.38), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(79, 212, 209, 0.32), transparent 36%);
+    pointer-events: none;
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    left: 28%;
+    top: 14%;
+    border: 2px solid rgba(255, 238, 161, 0.28);
+    border-radius: 50%;
+    box-shadow:
+        0 0 45px rgba(255, 215, 100, 0.28),
+        inset 0 0 45px rgba(255, 215, 100, 0.14);
     pointer-events: none;
 }
 
@@ -167,16 +193,18 @@ h1 {
 }
 
 .display-value {
-    width: 100%;
+    width: calc(100% - 8px);
+    margin-left: auto;
+    padding-right: 6px;
     color: #102f33;
-    font-size: clamp(2.7rem, 8vw, 4.4rem);
+    font-size: clamp(2.2rem, 7vw, 4.4rem);
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.05;
     text-align: right;
-    letter-spacing: -0.06em;
-    white-space: nowrap;
+    letter-spacing: -0.04em;
     overflow: hidden;
     text-overflow: ellipsis;
+    overflow-wrap: anywhere;
 }
 
 /* Button grid */
@@ -351,4 +379,36 @@ h1 {
     .calculator-keys {
         gap: 8px;
     }
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 235, 151, 0.5);
+    box-shadow:
+        0 0 28px rgba(255, 209, 86, 0.75),
+        inset 0 0 22px rgba(255, 245, 190, 0.28);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orb-one {
+    width: 130px;
+    height: 130px;
+    left: 30%;
+    top: 22%;
+}
+
+.orb-two {
+    width: 210px;
+    height: 210px;
+    right: 12%;
+    top: 12%;
+}
+
+.orb-three {
+    width: 110px;
+    height: 110px;
+    right: 18%;
+    bottom: 22%;
 }
