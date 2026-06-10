@@ -285,13 +285,101 @@ h1 {
     grid-column: span 2;
 }
 
-/* Footer */
-.footer {
+.site-footer {
     position: relative;
     z-index: 1;
-    text-align: center;
-    color: rgba(23, 60, 63, 0.76);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-pill {
+    width: min(100%, 720px);
+    padding: 12px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    color: rgba(23, 60, 63, 0.82);
+    background: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 999px;
+    box-shadow:
+        0 14px 30px rgba(23, 60, 63, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+}
+
+.footer-pill p {
     font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.social-link {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-dark);
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(219, 255, 246, 0.68));
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    border-radius: 50%;
+    box-shadow:
+        0 8px 18px rgba(23, 60, 63, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease,
+        background 160ms ease,
+        color 160ms ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: #ffffff;
+    background:
+        linear-gradient(145deg, var(--color-teal), #28b8b8);
+    box-shadow:
+        0 14px 24px rgba(23, 60, 63, 0.24),
+        0 0 22px rgba(79, 212, 209, 0.34);
+}
+
+.social-link:active {
+    transform: translateY(1px) scale(0.96);
+}
+
+.social-link:focus-visible {
+    outline: 3px solid rgba(244, 198, 79, 0.9);
+    outline-offset: 4px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.github-link:hover {
+    background:
+        linear-gradient(145deg, var(--color-deep), var(--color-dark));
+}
+
+.linkedin-link:hover {
+    background:
+        linear-gradient(145deg, #4fd4d1, #247f9f);
 }
 
 /* Tablet */
@@ -362,6 +450,26 @@ h1 {
 
     .key-action {
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-pill {
+        padding: 14px 16px;
+        border-radius: 24px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-pill p {
+        width: auto;
+        white-space: normal;
+        font-size: 0.82rem;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
     }
 }
 

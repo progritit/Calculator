@@ -305,3 +305,9 @@ document.addEventListener("keydown", (event) => {
         clearCalculator();
     }
 });
+
+const currentYear = document.querySelector("#currentYear");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
