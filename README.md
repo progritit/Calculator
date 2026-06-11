@@ -1,6 +1,6 @@
 # Solaris Terminal
 
-[Live Demo](https://progritit.github.io/YOUR_REPOSITORY_NAME/)
+[Live Demo](https://progritit.github.io/Calculator/)
 
 ![Solaris Terminal Preview](media/preview.png)
 
