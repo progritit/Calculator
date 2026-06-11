@@ -13,7 +13,7 @@ function multiply(a, b) {
 
 function divide(a, b) {
     if (b === 0) {
-        return "Nice try, solar wizard. No dividing by zero.";
+        return "⚠ Solar core rejected division by zero.";
     }
 
     return a / b;
@@ -57,6 +57,7 @@ const expression = document.querySelector("#expression");
 const numberButtons = document.querySelectorAll("[data-number]");
 const operatorButtons = document.querySelectorAll("[data-operator]");
 const actionButtons = document.querySelectorAll("[data-action]");
+const currentYear = document.querySelector("#currentYear");
 
 // Initial display
 updateDisplay();
@@ -306,8 +307,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-const currentYear = document.querySelector("#currentYear");
-
+// Dynamic footer year
 if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
 }
