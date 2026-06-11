@@ -2,7 +2,8 @@
 
 [Live Demo](https://progritit.github.io/Calculator/)
 
-![Solaris Terminal Preview](media/preview.png)
+<img width="1918" height="933" alt="image" src="https://github.com/user-attachments/assets/ecb4a847-906d-4541-9d3a-dedb600179a1" />
+
 
 A cyber-solar calculator interface built with HTML, CSS, and vanilla JavaScript.
 
