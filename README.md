@@ -218,37 +218,13 @@ An AI-generated background image was visually strong but contained a visible wat
 
 ---
 
-## AI-Assisted Workflow
+## Development Workflow
 
-This project was developed using a modern AI-assisted workflow.
+This project was built through a hands-on learning process using HTML, CSS, and vanilla JavaScript.
 
-### ChatGPT
+AI tools were used as learning and productivity assistants for brainstorming, visual direction, debugging support, and documentation refinement. The final code was reviewed, adapted, tested, and integrated manually, with a focus on understanding the logic, structure, and design decisions behind the implementation.
 
-Assisted with:
-
-* Project planning
-* HTML and CSS structure
-* JavaScript calculator logic
-* Debugging layout and display issues
-* Responsive design improvements
-* Footer implementation
-* Commit message suggestions
-* README drafting
-* Portfolio presentation refinement
-
-### Google Gemini
-
-Assisted with:
-
-* Visual direction exploration
-* Initial app mockup generation
-* Solar-inspired design references
-
-### Development Approach
-
-AI tools were used as collaborative assistants throughout the project. Implementation decisions, manual testing, debugging, code integration, and final design choices were handled directly by the developer.
-
-This workflow reflects a modern learning process where AI supports ideation and problem-solving while the developer remains responsible for understanding, adapting, testing, and refining the final result.
+This workflow reflects a modern approach to learning web development: using available tools strategically while staying responsible for the final result.
 
 ---
 
