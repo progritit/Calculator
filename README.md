@@ -1,14 +1,12 @@
-# Solaris Calculator
+# Solaris Terminal
 
-[Live Demo](https://progritit.github.io/Calculator/)
+[Live Demo](https://progritit.github.io/YOUR_REPOSITORY_NAME/)
 
-![Solaris Calculator Preview](media/preview.png)
+![Solaris Terminal Preview](media/preview.png)
 
-# SOLARIS CALCULATOR
+A cyber-solar calculator interface built with HTML, CSS, and vanilla JavaScript.
 
-A modern vanilla JavaScript calculator with responsive design and keyboard support.
-
-This project was developed as part of The Odin Project Foundations curriculum and expanded into a polished browser-based calculator focused on JavaScript logic, application state management, DOM manipulation, keyboard interactions, responsive layout, and clean UI design.
+This project was developed as part of **The Odin Project Foundations** curriculum and expanded into a polished browser-based calculator focused on JavaScript logic, application state management, DOM manipulation, keyboard interactions, responsive layout, and a distinctive cyber-solar visual identity.
 
 ---
 
@@ -26,8 +24,8 @@ The application showcases:
 * Keyboard support
 * Dynamic display updates
 * Footer with automatically updated copyright year
-* Polished solar-inspired visual direction
-* CSS-generated background and decorative elements
+* Cyber-solar visual direction
+* CSS-generated background and HUD-style decorative elements
 * Responsive layout for desktop, tablet, and mobile
 
 ---
@@ -37,15 +35,16 @@ The application showcases:
 * HTML5
 * CSS3
 * JavaScript
+* Vanilla JavaScript
+* DOM manipulation
+* Event listeners
 * CSS Grid
 * Flexbox
 * CSS variables
-* DOM manipulation
-* Event listeners
 * Responsive design
 * Git and GitHub
+* GitHub Pages
 * VS Code
-* AI-assisted design and development workflow
 
 ---
 
@@ -75,30 +74,32 @@ The application showcases:
 ### Layout & UI
 
 * Semantic HTML structure
-* Glassmorphism-inspired calculator panel
-* Large readable display area
-* Secondary expression/history line
+* Responsive app layout
+* Calculator display with expression/history line
 * Styled number, operator, action, and equals buttons
-* Responsive footer with GitHub and LinkedIn links
+* HUD-inspired intro panel
+* Energy/status indicators
+* Cyber-solar background built with CSS
+* Footer with GitHub and LinkedIn links
 * Dynamic current year in the footer
-* Responsive layout for multiple screen sizes
 
 ### Design
 
-* Solar-inspired visual identity
-* Subtle eco-futuristic atmosphere
-* Warm gold, teal, green, cream, and cyan color palette
-* CSS-generated background replacing watermarked visual assets
-* Soft shadows, rounded panels, glow effects, and decorative orbs
-* Refined title styling using modern font pairing and gradient text
-* Visual direction kept subtle rather than explicitly labeled
+* Cyber-solar visual identity
+* Deep dark carbon and moss-inspired background
+* Neon solar yellow, photovoltaic orange, acid green, and plasma cyan accents
+* HUD-style interface details
+* Solar-grid and energy-panel inspiration
+* Sharp, technical UI panels with clipped/chamfered shapes
+* Glowing borders, energy bars, and high-contrast interactive states
+* Design direction inspired by digital eco-futurism, clean energy systems, and cybernetic interfaces
 
 ---
 
 ## Project Structure
 
-```
-Solaris_Calculator/
+```plaintext
+Solaris-Terminal/
 │
 ├── index.html
 ├── styles.css
@@ -114,20 +115,20 @@ Solaris_Calculator/
 
 ## Design Concept
 
-Solaris Calculator was designed as a clean and polished calculator interface with a subtle solar-inspired visual direction.
+**Solaris Terminal** was redesigned from a soft solar-inspired calculator into a sharper **cyber-solar calculation interface**.
 
-The goal was to avoid a generic calculator layout while keeping the application realistic, usable, and beginner-friendly. The interface combines foundational front-end development skills with a refined visual identity, creating a project that feels suitable for a junior developer portfolio.
+The project explores a hybrid visual direction combining:
 
-The design is inspired by:
+* Dark cybernetic surfaces
+* Solar energy accents
+* Photovoltaic-inspired grids
+* HUD-style interface elements
+* Eco-futuristic digital systems
+* High-contrast interactive UI states
 
-* Clean technology
-* Soft sunlight
-* Glass-like interface panels
-* Eco-futuristic visual language
-* Calm gradients and glowing accents
-* Responsive product-style interfaces
+The goal was to avoid building a generic calculator and instead create a small, memorable interface concept that could belong to a larger visual system.
 
-The objective was not to build an advanced scientific calculator, but to create a complete and elegant browser calculator using HTML, CSS, and vanilla JavaScript fundamentals.
+The cyber-solar direction keeps the optimism and energy of solar-inspired design, but adds a more technical, industrial, and rebellious visual tone. The result is a calculator that feels less like a simple utility and more like a compact computation module inside a futuristic clean-energy terminal.
 
 ---
 
@@ -146,9 +147,10 @@ This project helped reinforce:
 * Structuring conditional logic clearly
 * Creating responsive layouts with CSS Grid and Flexbox
 * Using CSS variables for consistent design
+* Creating advanced visual effects with CSS
 * Debugging asset paths and script loading behavior
 * Improving UI details through small visual refinements
-* Writing clearer commit messages during project development
+* Refactoring an existing design direction into a stronger visual identity
 
 ---
 
@@ -161,7 +163,7 @@ The calculator needed to track the first number, selected operator, second numbe
 ### Solution
 
 * Created dedicated state variables
-* Used separate functions for number input, operator selection, evaluation, clearing, and backspace
+* Used separate functions for number input, operator selection, evaluation, clearing, decimal input, and backspace
 * Updated the display based on the current state of the calculator
 
 ---
@@ -172,7 +174,7 @@ The calculator needed to evaluate expressions progressively instead of calculati
 
 Example:
 
-```
+```plaintext
 12 + 7 - 1 = 18
 ```
 
@@ -212,9 +214,22 @@ An AI-generated background image was visually strong but contained a visible wat
 
 ### Solution
 
-* Recreated the general atmosphere using CSS gradients, pseudo-elements, and decorative orbs
+* Recreated the general atmosphere using CSS gradients, pseudo-elements, grid layers, and decorative orbs
 * Removed dependency on the watermarked image
 * Improved ownership, performance, and portfolio presentation
+
+---
+
+### Cyber-Solar Refactor
+
+The first visual version was polished but felt closer to a soft solar-punk interface. The project later needed a stronger and more personal design signature.
+
+### Solution
+
+* Refactored the project into a cyber-solar terminal concept
+* Reworked the color palette toward deep dark surfaces and neon solar accents
+* Added HUD-inspired metadata, energy indicators, and solar-grid background details
+* Replaced soft glassmorphism with sharper energy-panel styling
 
 ---
 
@@ -222,7 +237,7 @@ An AI-generated background image was visually strong but contained a visible wat
 
 This project was built through a hands-on learning process using HTML, CSS, and vanilla JavaScript.
 
-AI tools were used as learning and productivity assistants for brainstorming, visual direction, debugging support, and documentation refinement. The final code was reviewed, adapted, tested, and integrated manually, with a focus on understanding the logic, structure, and design decisions behind the implementation.
+AI tools were used as learning and productivity assistants for brainstorming, visual direction, debugging support, and documentation refinement. The final code was reviewed, adapted, tested, and integrated manually, with a focus on understanding the JavaScript logic, DOM interactions, layout structure, responsive behavior, and design decisions behind the implementation.
 
 This workflow reflects a modern approach to learning web development: using available tools strategically while staying responsible for the final result.
 
@@ -234,12 +249,14 @@ Potential future enhancements:
 
 * Add calculation history
 * Add copy result functionality
-* Add light/dark theme toggle
+* Add an Eco Mode toggle
+* Add reduced-motion support
+* Add animated energy bar states
+* Add keyboard press visual feedback
 * Add improved accessibility testing
 * Add custom favicon
 * Add unit tests for calculator logic
 * Add optional percentage operation
-* Add smoother button press animations
 * Add GitHub Pages deployment link
 * Add a final project screenshot
 
@@ -247,7 +264,7 @@ Potential future enhancements:
 
 ## Author
 
-Clebson Costa
+**Clebson Costa**
 
 Full Stack Web Development student.
 
@@ -261,6 +278,7 @@ Current areas of study and practice:
 * Git and GitHub
 * UI implementation
 * Portfolio-quality projects
+* AI-assisted development workflow
 
 Long-term learning path:
 
@@ -274,7 +292,7 @@ Long-term learning path:
 ## Acknowledgements
 
 * The Odin Project
-* ChatGPT for development support and debugging assistance
+* ChatGPT for learning support, debugging assistance, and documentation refinement
 * Google Gemini for visual direction exploration
 * The open web development community
 
